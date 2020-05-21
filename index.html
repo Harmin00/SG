@@ -100,7 +100,7 @@
                         "<input class='qtybox' type='text' name='qty' id='Qty_" + i + "' maxlength='2' readonly/>" +
                         "<span class='plus buttongreen' id='sp_" + i + "' onclick='addproduct(this);' >+</span></div>" +
                       "</div>");
-            $('#maintable').append("<tr class='w3-border-bottom'><td>" + str1 + "</td><td >" + myObj.records[i].Category + "</td></tr>");
+            $('#maintable').append("<tr class='w3-border-bottom'><td>" + str1 + "</td><td  style='visibility:hidden;'>" + myObj.records[i].Category + "</td></tr>");
         }
    }
 
@@ -516,7 +516,7 @@ margin-top:10px;
      <div class="w3-col s4 w3-white w3-left cssgrandtotal" id="GrandTotal">0</div>
 </header>
 
-    <input  type="button" onclick="BuildTable();" value="click" />
+
 <div  id="ContentOne" class="w3-container">
   <table class="w3-table w3-bordered" id="maintable">
 
